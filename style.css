@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border: 1px solid black;
+
+}
+#ldiv{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    background-color: white;
+}
+#lnav{
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+#lnavright{
+    display: flex;
+    align-items: center;
+}
+#lnavright a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+}
+#lnavright i{
+color: royalblue;
+}
+#ldiv #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+#textcenter a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    opacity: .6;
+    border-bottom: 1px solid black;
+    padding-bottom: 4px;
+}
+#rdiv{
+    width: 60%;
+    height: 100%;
+    background-color:aqua;
+   
+}
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color:aquamarine ;
+    display: flex;
+}
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1621091211034-53136cc1eb32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGJhY2tncm91bmQlMjBpbWFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=800);
+    background-size: cover;
+    background-position: top;
+}
+#rtopright{
+    width: 45%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1647950684398-0367ef5bfa54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=800) ;
+    background-position: center;
+    background-size: cover;
+}
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1682687220509-61b8a906ca19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    
+    background-size: cover;
+    background-position:50%;
+}
+/* Your existing CSS */
+
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens, such as tablets */
+    #main {
+        flex-direction: column;
+    }
+    #ldiv {
+        width: 100%;
+    }
+    #rdiv {
+        width: 100%;
+    }
+    #lnav {
+        padding: 10px;
+    }
+    #textcenter h1 {
+        font-size: 50px;
+    }
+    /* Add any other necessary style adjustments for tablets */
+}
+
+@media (max-width: 500px) {
+    /* Further adjustments for smaller screens, such as smartphones */
+    #lnav {
+        padding: 5px;
+    }
+    #textcenter h1 {
+        font-size: 30px;
+    }
+    #textcenter p {
+        font-size: 14px;
+    }
+    /* Add more adjustments as needed for smaller screens */
+}
