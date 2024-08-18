@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // CORS configuration
-const allowedOrigins = ['http://localhost:5173']; // Add your frontend domain here
+const allowedOrigins = ['https://statuesque-jelly-85b404.netlify.app/']; // Add your frontend domain here
 const corsOptions = {
   origin: function(origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {
