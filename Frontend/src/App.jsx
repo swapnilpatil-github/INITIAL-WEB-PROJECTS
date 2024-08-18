@@ -11,7 +11,7 @@ function App() {
 
   const getNews = async () => {
     try {
-      const response = await axios.get('/api/news');
+      const response = await axios.get('https://initial-web-projects.onrender.com/api/news');
       setNews(response.data.articles);
     } catch (err) {
       setError(err.message);
