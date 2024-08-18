@@ -8,9 +8,10 @@ frontend/build/
 backend/dist/
 
 # Environment files
-frontend/.env
-backend/.env
-
+Frontend/.env
+Backend/.env
+Frontend\.env
+Backend\.env
 # Logs
 *.log
 frontend/*.log
