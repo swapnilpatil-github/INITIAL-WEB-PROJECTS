@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-   "start": "serve -s dist",
+   "start": "vite",
   },
   "dependencies": {
     "axios": "^1.7.4",
